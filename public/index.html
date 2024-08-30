@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Student Information Form</h2>
+        <form id="studentForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="prn">PRN:</label>
+            <input type="text" id="prn" name="prn" required><br><br>
+            
+            <label for="year">Year of Study:</label>
+            <select id="year" name="year" required>
+                <option value="First Year">First Year</option>
+                <option value="Second Year">Second Year</option>
+                <option value="Third Year">Third Year</option>
+                <option value="Final Year">Final Year</option>
+            </select><br><br>
+            
+            <label for="branch">Branch:</label>
+            <select id="branch" name="branch" required>
+                <option value="Computer Engineering">Computer Engineering</option>
+                <option value="Information Technology">Information Technology</option>
+                <option value="Mechanical Engineering">Mechanical Engineering</option>
+                <option value="Electrical Engineering">Electrical Engineering</option>
+            </select><br><br>
+            
+            <button type="submit">Submit</button>
+        </form>
+        <div id="toast"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
